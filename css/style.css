@@ -1,0 +1,707 @@
+body{
+  margin: 0px;
+}
+a{
+  font-size: 13px;
+  text-decoration: none;
+}
+h1, h2, h3, h4,li,a,p{
+  font-family: sans-serif;
+}
+p{
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+h1:visited,h1:active,h2:visited,h2:active,h3:visited,h3:active,a:visited,a:active,a{
+  color: #000;
+  font-family: sans-serif;
+}
+ul, menu, dir {
+    display: block;
+    list-style: none;
+    text-align: center;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+h1{
+  font-family: 'nimbus-sans',sans-serif;;
+  font-size: 2em;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: 300;
+}
+figure {
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/*---------------------
+----------HEADER STARTS----*/
+#header{
+  height: 100vh;
+}
+.header-overlay{
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+.header-overlay .slide{
+  position: fixed;
+  background-color: #00acc3;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: -1;
+  transition: 0.5s;
+}
+.grey-back{
+  background:none;
+}
+.top-head-container {
+  overflow: auto;
+  padding-bottom: 20px;
+  transition: .7s;
+  position: absolute;
+  z-index: 10;
+  transition-delay: 0.2s;
+}
+.vanish{
+  display: none;
+}
+.top-head-bgcolor{
+  background-color: #00acc3;
+}
+.top-head{
+  width:75%;
+  margin: auto;
+  position: fixed;
+  padding: 25px 13%;
+  transition: 0.7s;
+}
+.top-head div{
+  display: inline-block;
+}
+.branding{
+  width: 20%;
+}
+.branding a{
+  background-position: -350px -150px;
+  background-image: url(../images/sprite7.png);
+  width: 124px;
+  height: 21px;
+  float: left;
+}
+/*--------------------
+------------NAVIGATION-----*/
+.navigation{
+  margin: auto;
+  width: 60%;
+}
+.navigation li{
+  display: inline-block;
+  margin: 0 2%;
+}
+.navigation a{
+  color: #fff;
+  transition: .2s;
+}
+.navigation a:hover{
+  color:black;
+  text-decoration: underline;
+}
+/*-----------------------
+-----------SOCIAL---LINKS--*/
+.top-head .social {
+  float: right;
+  width: 20%;
+  transition: .2s;
+  margin-left: -1%;
+  margin-top: -15px;
+}
+.top-head .social li{
+  width: 20%;
+  display: inline-block;
+}
+.top-head .social li a{
+  background-image: url(../images/sprite7.png);
+  display: inline-block;
+  transition: .2s;
+}
+.twitter{
+  background-position: 0 0;
+  width: 15px;
+  height: 13px;
+}
+.twitter:hover{
+  background-position:  0 -51px;
+}
+.facebook{
+  background-position: -50px 0;
+  width: 7px;
+  height: 14px;
+}
+.facebook:hover{
+  background-position: -50px -51px;
+}
+.linkedIn{
+  background-position: -100px 0;
+  width: 14px;
+  height: 14px;
+}
+.linkedIn:hover{
+  background-position: -100px -51px;
+}
+.mobile-navi{
+  visibility: hidden;
+  display: block;
+  height: 20px;
+  width: 19px;
+  background-image: url(../images/sprite7.png);
+  background-position: -400px -200px;
+}
+#mobile-nav{
+  display: none;
+  position: fixed;
+  z-index: 5;
+}
+.navbar-collapse{
+  display: none;
+  visibility: hidden;
+}
+ul.navbar-collapse{
+  position: inherit;
+  width: 100%;
+  position: absolute;
+  border-top: 2px solid #fff;
+  margin-top: 71px;
+}
+ul.navbar-collapse li{
+  border-bottom: 1px solid #4d4d4d;
+  padding: 18px 0;
+  transition: 0.7s;
+  transition-delay: 0.2s;
+}
+li.social>a{
+  background-image: url(../images/sprite7.png);
+  display: inline-block;
+}
+li.social>a.twitter{
+  width: 17px;
+  height: 17px;
+  margin-right: 5%;
+  background-position: -50px -200px;
+}
+li.social>a.facebook{
+  width: 13px;
+  height: 18px;
+  margin-right: 5%;
+  background-position: -100px -200px;
+}
+li.social>a.linkedIn{
+  width: 17px;
+  height: 17px;
+  background-position: -150px -200px;
+}
+ul.navbar-collapse li a{
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+/*------------------------
+---------CENTRE---HEADER---*/
+.intro-head{
+  color: #fff;
+  z-index: 1;
+  position: absolute;
+  width: 480px;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.work-button{
+  margin: 40px auto 0;
+  display: block;
+  width: 51px;
+  height: 50px;
+  background-image: url(../images/sprite7.png);
+  background-position: -200px 0;
+  transition: .2s;
+}
+.work-button:hover{
+  background-position: -200px -50px;
+}
+.emp-btn {
+  display: block;
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+}
+.emp-btn>a{
+  color: white;
+  font-size: 0.9rem;
+}
+/*----HEADER---ENDS---*/
+/*----CONTAINER--STARTS---*/
+#container{
+  width: 100%;
+  margin:0;
+}
+/*----------------------
+---------OUR--WORK--SECTION--*/
+.our-work{
+  width: 100%;
+  display: block;
+}
+.our-work h1{
+  text-align: center;
+  background-color: #fff;
+  padding: 5% 0;
+  font-size: 28px;
+}
+.work-tiles ul{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.work-tiles li{
+  width: 33.3%;
+  float: left;
+}
+.work-tiles li a figure{
+
+      padding-bottom: 90%;
+}
+.work-tiles li a figure .overlay{
+  width: 33.3%;
+  padding-bottom: 30%;
+  opacity: 0;
+  background-color: black;
+  z-index: 3;
+  position: absolute;
+  transition: .5s;
+}
+.work-tiles li a figure .overlay:hover{
+  opacity: 0.3;
+}
+/*---------------------
+-----------BLOG-SECTION---*/
+.blog {
+    background-color: #fff;
+    padding: 2% 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    display: inline-block;
+  }
+.blog h2 {
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 300;
+    font-size: 18px
+}
+.post {
+    float: left;
+    width: 40%;
+    text-align: left;
+    padding: 0 5%;
+}
+p.blog-category {
+    color: #ccc;
+    font-size: 10px;
+}
+.blog-category a{
+  color:#00acc3;
+  font-size: 11px;
+}
+.blog-date:before {
+    content: "";
+    background-color: #ccc;
+    margin: 3px 5px;
+    width: 11px;
+    height: 1px;
+    display: inline-block;
+}
+a.blog-title h3{
+  font-size: 15px;
+}
+a.blog-title h3:hover {
+    color: #00acc3;
+}
+.read-more:before {
+    content: "";
+    background-color: #ccc;
+    margin: 3px 5px;
+    width: 20px;
+    height: 1px;
+    display: inline-block;
+}
+.read-more a{
+  font-size: 15px;
+  text-decoration: underline;
+}
+/*-----TWITTER SECTION----*/
+.twitter-feed{
+  text-align: center;
+  background-color: #cceef3;
+  color:#007e8f;
+  height: 250px;
+  width: 100%;
+}
+.twitter-feed a{
+  color: #007e8f;
+  text-decoration: underline;
+}
+.twitter-container{
+  width:60%;
+  margin: auto;
+  padding-top: 5%
+}
+.twitter-feed .twitter-container figure{
+  background-image: url(../images/sprite7.png);
+    width: 42px;
+    height: 35px;
+    background-position: -300px 0;
+    margin: 0 auto;
+}
+.twitter-container p, .twitter-container a {
+    font-size: 1.3rem;
+}
+/*------BRANDS------*/
+.brands{
+  width: 100%;
+  padding: 3% 0%;
+  background-color: #fff;
+  text-align: center;
+}
+.brands h2{
+  font-weight: 300;
+  font-size: 18px;
+}
+.brands ul{
+  width:80%;
+  padding: 2% 0%;
+  margin: auto;
+}
+.brands li {
+  width: 18%;
+  text-align: center;
+  padding-bottom: 4%;
+  display: inline-block;
+}
+.brands li img{
+  height: auto;
+  width: 100px;
+}
+.footer-links{
+  background-color: #2b2b2b;
+  color: #fff;
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 20px 0;
+  overflow: auto;
+
+}
+.footer-links p{
+  font-size: 0.8rem;
+}
+.footer-links a{
+  color: #ccc;
+}
+.footer-links a:hover{
+  color: #bdd149;
+}
+.footer-links>ul{
+  width: 75%;
+  padding-bottom: 15%;
+  margin: auto;
+}
+.footer-links>ul li{
+  display: inline-block;
+  float: left;
+  padding: 4% 2%;
+}
+.footer-links .about{
+  width: 30%;
+  text-align: left;
+  min-width: 200px;
+}
+.footer-links .offices {
+  text-align: left;;
+  width: 10%;
+}
+.offices ul,.services ul{
+  padding: 0px;
+}
+.offices ul{
+  width: 100%;
+}
+.services ul{
+  width: 50%;
+  float: left;
+}
+.footer-links .services{
+  text-align: left;
+  width: 30%;
+  min-width: 250px;
+  max-width: 479px;
+}
+.footer-links .offices li,.footer-links .services li{
+  text-align: left;
+  width: 125px;
+  color: #ccc;
+  line-height: 2;
+  padding: 0;
+}
+
+.footer-links .offices li:before,.footer-links .services li:before {
+    content: "";
+    background-color: #ccc;
+    margin: 3px 5px 3px 0;
+    width: 15px;
+    height: 1px;
+    display: inline-block;
+}
+.footer-links .social{
+  width: 14%;
+  text-align: left;
+}
+.footer-links .social ul li a{
+  background-image: url(../images/sprite7.png);
+  display: inline-block;
+  transition: .2s;
+}
+.footer-links .social>ul>li {
+    padding: 0 3%;
+}
+.instagram{
+  background-position: 0 -200px;
+    width: 15px;
+    height: 17px;
+}
+.footer-links .social .twitter{
+  background-position: -50px -200px;
+    width: 17px;
+    height: 17px;
+}
+.footer-links .social .facebook{
+  background-position: -100px -200px;
+    width: 13px;
+    height: 18px;
+}
+.footer-links .social .linkedIn{
+  background-position: -150px -200px;
+    width: 17px;
+    height: 17px;
+}
+.footer-links .social .youtube{
+  background: url(../images/youtube_icon_64.png) no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+.copyright{
+  background-color: #363636;
+  width: 100%;
+}
+.copyright ul{
+  width: 80%;
+  padding: 2% 0;
+  margin: auto;
+}
+.copyright li p{
+  font-size: .75rem;
+  color: #6c6c6c;
+  text-align: left;
+}
+.copyright li a.foot-logo{
+  background-image: url(../images/sprite7.png);
+  width: 20px;
+  height: 21px;
+  background-position: -250px -200px;
+  display: inline;
+  float: right;
+  margin-top: -30px;
+}
+
+
+/*----------------
+-------MEDIA---QUERIES---*/
+
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+  .footer-links>ul{
+    width: 80%;
+  }
+  .footer-links>ul li{
+    padding: 0 1%;;
+  }
+  .footer-links .about{
+    width: 32%;
+  }
+  .footer-links .offices {
+    width: 11%;
+  }
+  .footer-links .services {
+    width: 34%;
+  }
+  .footer-links .social{
+    width: 15%;
+  }
+}
+@media only screen and (max-width : 991px) and (min-width : 768px) {
+  .top-head-container{
+    background: none;
+  }
+  .blog{
+    padding: 2% 5%;
+  }
+  .brands>ul{
+    width:100%;
+    padding: 2% 0%;
+  }
+  .footer-links>ul{
+    width: 100%;
+  }
+  .footer-links>ul li{
+    padding: 0 1%;;
+  }
+  .footer-links .social>ul>li {
+      padding: 0 2%;
+  }
+  .footer-links .about{
+    width: 32%;
+  }
+  .footer-links .offices {
+    width: 12%;
+  }
+  .footer-links .services {
+    width: 33%;
+}
+  .copyright ul{
+    width: 90%;
+    padding: 2% 0;
+    margin: auto;
+  }
+}
+@media only screen and (max-width : 768px) and (min-width : 320px){
+  .grey-back{
+    background-color: #333;!important
+  }
+  #mobile-nav{
+    display: block;
+  }
+  .header-overlay{
+    background: none;
+  }
+  .header-overlay .slide {
+    opacity: 1;
+  }
+  .navigation, .top-head>.social{
+    visibility: hidden;
+    display: none;
+  }
+  .top-head{
+    width: 90%;
+    display: block;!important
+  }
+  .mobile-navi{
+    visibility: visible;
+    display: block;
+    height: 20px;
+    width: 19px;
+    background-image: url(../images/sprite7.png);
+    background-position: -400px -200px;
+    float:right;
+    margin-right: 13%;
+  }
+  .intro-head {
+    width: 100%;
+    text-align: center;
+  }
+  .emp-btn{
+    display: none;
+  }
+  .work-tiles ul{
+    overflow: hidden;
+  }
+  .work-tiles li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  .work-tiles li a figure {
+    padding-bottom: 60%;
+  }
+  .work-tiles li a figure .overlay {
+    width: 100%;
+    padding-bottom: 60%;
+  }
+  a.blog-title h3 {
+    font-size: 17px;
+    color: #000;
+  }
+  .blog {
+    padding: 15% 10%;
+    padding-bottom: 20%;
+  }
+  .blog .post{
+    width: 100%;
+    padding: 2% 0;
+  }
+  .twitter-container {
+    width: 80%;
+    padding-top: 10%;
+  }
+  .twitter-container p, .twitter-container a {
+    font-size: 1.2rem;
+  }
+  .brands{
+  padding: 10% 0%;
+  padding-bottom: 20%;
+  }
+  .brands>ul{
+    width:100%;
+    padding: 2% 0%;
+  }
+  .brands li {
+    width: 48%;
+  }
+  .footer-links>ul{
+    width: 90%;
+    padding: 5%;
+  }
+  .footer-links .about{
+    width: 90%;
+  }
+  .footer-links .offices {
+    width: 35%;
+  }
+  .footer-links .services {
+    width: 75%;
+  }
+  .footer-links .social{
+    width: 100%;
+  }
+  .footer-links .social>ul>li {
+      padding: 0 14% 0 0;
+  }
+  .copyright ul {
+    width: 100%;
+    padding: 20px 0 40px 0;
+  }
+  .copyright ul>li>p{
+    text-align: center;
+  }
+  .copyright li a.foot-logo {
+    position: absolute;
+    margin: 0;
+    margin-left: -10px;
+  }
+}
